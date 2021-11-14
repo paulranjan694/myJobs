@@ -1,0 +1,112 @@
+@import "../../utils/config";
+
+$paddingValue: 25px 100px;
+
+.homepage__container {
+  display: flex;
+  flex-direction: column;
+
+  .homepage__firstPart {
+    // background: #25324e;
+    background-color: $topSection_bgcolor;
+    display: flex;
+    justify-content: space-between;
+    height: 48vh;
+    padding: $paddingValue;
+
+    .firstpart__firstSection {
+      flex: 0.6;
+
+      & > p {
+        color: $textColor;
+        font-size: 60px;
+        font-size: 54px;
+        line-height: 60px;
+        margin: 30px 0;
+
+        & .title-style {
+          color: $titleColor;
+        }
+      }
+    }
+
+    .firstpart__secondSection {
+      width: 670px;
+      height: 350px;
+      z-index: 1;
+      margin-top: 27px;
+
+      & img {
+        @include imgDefault;
+        border-radius: 15px;
+      }
+    }
+  }
+
+  .homepage__secondPart {
+    background-color: $bottomSection_bgcolor;
+    // height: 90vh;
+    padding: $paddingValue;
+
+    & .secondPart__whyUs {
+      margin-top: 90px;
+
+      & .section__title {
+        font-size: 25px;
+        margin-bottom: 40px;
+      }
+
+      & .section__container {
+        display: flex;
+        justify-content: space-between;
+
+        & .section__card {
+          background-color: white;
+          width: 22vw;
+          padding: 15px 25px;
+          border-radius: 6px;
+          box-shadow: 1px 1px 1px 1px $bottomSection_bgcolor;
+
+          & .card__header {
+            color: $titleColor;
+            font-size: 22px;
+            width: 52%;
+            padding: 10px 0;
+            font-weight: 500;
+          }
+
+          & .card__body {
+            font-size: 15px;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          }
+        }
+      }
+    }
+
+    & .secondPart__companiesWhoTrust {
+      width: 100%;
+
+      & .section__title {
+        font-size: 25px;
+        margin-bottom: 40px;
+        margin-top: 85px;
+      }
+
+      & .section__container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        & .logo {
+          width: 17%;
+          height: 75px;
+          margin-bottom: 20px;
+
+          & img {
+            @include imgDefault;
+          }
+        }
+      }
+    }
+  }
+}

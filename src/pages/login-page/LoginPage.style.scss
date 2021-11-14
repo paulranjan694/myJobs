@@ -1,0 +1,47 @@
+@import "../../utils/config";
+
+.loginPage {
+  & .loginPage__topSection {
+    background-color: $topSection_bgcolor;
+    height: 37vh;
+    position: relative;
+
+    & .login__container {
+      background-color: white;
+      width: 45%;
+      margin: 0 auto;
+      padding: 20px 35px;
+      border-radius: 10px;
+      z-index: 1;
+      position: absolute;
+      left: 30%;
+      top: 45%;
+
+      & .login__body {
+        & .forget__password {
+          position: absolute;
+          font-size: 15px;
+          right: 43px;
+          margin-top: 3px;
+          cursor: pointer;
+          z-index: 1000;
+
+          & > a {
+            color: $titleColor;
+          }
+        }
+
+        & .btn__group {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  & .loginPage__bottomSection {
+    background-color: $bottomSection_bgcolor;
+    height: 75vh;
+  }
+}

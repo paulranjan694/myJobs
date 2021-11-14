@@ -1,0 +1,38 @@
+.inputField-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  & > label {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  & .input__value {
+    // width: 85%;
+    padding: 10px 20px;
+    font-size: 15px;
+    background: #fafafa;
+    border-radius: 4px;
+    border: 1px solid #00000069;
+    margin-bottom: 25px;
+
+    &:focus {
+      outline: none;
+      border: 1px solid #43afff;
+    }
+
+  }
+
+  & .error__active{
+    border: 1px solid red;;
+  }
+
+  & .error {
+    font-size: 10px;
+    color: red;
+    position: absolute;
+    right: 3px;
+    top: 65px;
+  }
+}

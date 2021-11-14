@@ -1,0 +1,46 @@
+@import '../../utils//config';
+
+.job__details {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    width: 250px;
+    border-radius: 5px;
+
+    .job__title {
+      color: #303f60;
+      font-size: 19px;
+      font-weight: 500;
+    }
+    .job__desc {
+      color: #737d93;
+      font-size: 14px;
+      word-break: break-all;
+      margin: 10px 0;
+    }
+    .job__others{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+
+      .job__location {
+        align-items: center;
+        color: #767a85;
+        font-size: 15px;
+        & > i{
+          color: $titleColor;
+          font-size: 18px;
+        }
+      }
+      .view__applications{
+        padding: 10px 15px;
+        background-color: #d9efff;
+        font-size: 12px;
+        border-radius: 5px;
+        cursor: default;
+      }
+    }
+  }

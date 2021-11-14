@@ -1,0 +1,112 @@
+@import "../../utils/config";
+
+.nav {
+  background-color: $topSection_bgcolor;
+  color: $textColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 25px 0 25px;
+
+  & .nav__brand {
+    font-size: 25px;
+
+    & .title__color {
+      color: $titleColor;
+    }
+  }
+
+  & .nav__auth__container {
+    display: flex;
+    align-items: center;
+
+    & .postJob__link {
+      margin-right: 15px;
+      cursor: default;
+    }
+
+    & .user__profile {
+      display: flex;
+      align-items: center;
+
+      & .user__avatar {
+        background-color: $bottomSection_bgcolor;
+        color: $topSection_bgcolor;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        margin-right: 10px;
+        font-weight: 500px;
+      }
+
+      & .logout__icon {
+        font-size: 30px;
+      }
+    }
+
+    & .logout__dropdown {
+      position: absolute;
+      right: 11px;
+      top: 88px;
+
+      .top__triangle {
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid white;
+        margin-left: 63px;
+      }
+      .logout__container {
+        background-color: white;
+        color: $titleColor;
+        padding: 12px 24px;
+        font-size: 15px;
+        border-radius: 3px;
+        font-weight: 500;
+        cursor: default;
+      }
+    }
+
+    & .hide {
+      display: none;
+    }
+  }
+
+  & .nav__links {
+    background-color: #33557e;
+    padding: 15px 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid #43afff;
+    cursor: default;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 96%;
+    height: 1px;
+    background-color: #4c618f;
+    top: 85px;
+    opacity: 0.7;
+    z-index: 1000;
+  }
+}
+
+.nav .active {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 5px;
+    background-color: #43afff;
+    top: 80px;
+    z-index: 1000;
+    right: 130px;
+  }
+}

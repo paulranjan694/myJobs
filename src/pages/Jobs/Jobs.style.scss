@@ -1,0 +1,64 @@
+@import "../../utils/config";
+
+$paddingValue: 25px 100px;
+
+.jobs {
+  & .jobs__topSection {
+    background-color: $topSection_bgcolor;
+    height: 50vh;
+    color: white;
+    padding: $paddingValue;
+
+    .jobs__top_nav {
+      font-size: 12px;
+
+      & .right-icon{
+        font-size: 8px;
+        margin: 0 5px;
+      }
+    }
+
+    .title {
+      margin-top: 20px;
+    }
+  }
+
+  & .jobs__bottomSection {
+    background-color: $bottomSection_bgcolor;
+    height: 70vh;
+    padding: $paddingValue;
+
+    & .postJobs__container {
+      background-color: white;
+      width: 45%;
+      margin: 0 auto;
+      padding: 20px 35px;
+      border-radius: 10px;
+      z-index: 1;
+      position: absolute;
+      left: 30%;
+      top: 30%;
+
+      & .postJobs__body {
+        & .forget__password {
+          position: absolute;
+          font-size: 15px;
+          right: 43px;
+          margin-top: 3px;
+          cursor: pointer;
+          z-index: 1000;
+
+          & > a {
+            color: $titleColor;
+          }
+        }
+
+        & .btn__group {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

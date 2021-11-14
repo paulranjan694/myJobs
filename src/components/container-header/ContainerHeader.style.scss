@@ -1,0 +1,5 @@
+@import '../../utils/config';
+
+.login__header{
+    @include containerHeader;
+}

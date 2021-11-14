@@ -1,0 +1,9 @@
+@import '../../utils/config';
+
+.login__footer{
+    @include containerFooter;
+
+    & > a{
+        color: $titleColor;
+    }
+}

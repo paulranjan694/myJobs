@@ -1,0 +1,24 @@
+$topSection_bgcolor: #2d3d5d;
+$bottomSection_bgcolor: #edf6ff;
+$titleColor: #43afff;
+$textColor: white;
+
+@mixin imgDefault {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin containerHeader {
+    margin-bottom: 30px;
+
+        & .header__title{
+            font-size: 28px;
+        }
+}
+
+@mixin containerFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
